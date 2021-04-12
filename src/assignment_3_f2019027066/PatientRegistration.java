@@ -9,7 +9,7 @@ import javax.swing.JFrame;
 public class PatientRegistration extends javax.swing.JFrame {
     Connection conn=null;
     JFrame frame;
-    public void getframe()
+    public final void getframe()
     {
         setVisible(true);
         //setSize(600,500);
