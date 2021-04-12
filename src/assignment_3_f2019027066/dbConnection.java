@@ -7,6 +7,7 @@ package assignment_3_f2019027066;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.SQLException;
 
 
 public class dbConnection  {
@@ -16,16 +17,13 @@ public class dbConnection  {
         Connection conn=null;
         try
         {
-            String dbURL="jdbc:postgresql://127.0.0.1:5432/localhost";
+            String dbURL="jdbc:postgresql://127.0.0.1:5432/new_db";
             String userName="postgres";
             String password="30sigsbn";   
             conn=DriverManager.getConnection(dbURL,userName,password);
         }
-        catch (Exception ex)
+        catch (SQLException ex)
         {
-        
-        ex.printStackTrace();
-        
         }
        return conn;
     }
