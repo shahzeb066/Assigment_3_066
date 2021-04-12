@@ -19,7 +19,7 @@ public class dbConnection  {
         {
             String dbURL="jdbc:postgresql://127.0.0.1:5432/new_db";
             String userName="postgres";
-            String password="30sigsbn";   
+            String password="reenoip";   
             conn=DriverManager.getConnection(dbURL,userName,password);
         }
         catch (SQLException ex)
