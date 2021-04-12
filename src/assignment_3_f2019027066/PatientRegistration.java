@@ -1,4 +1,4 @@
-package assignment_03_f2019027067;
+package assignment_3_f2019027066;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
@@ -69,7 +69,6 @@ public class PatientRegistration extends javax.swing.JFrame {
         ageComboBox = new javax.swing.JComboBox<>();
         ageTextField = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
-        birthDateChooser = new com.toedter.calendar.JDateChooser();
         jLabel9 = new javax.swing.JLabel();
         genderComboBox = new javax.swing.JComboBox<>();
         maritalComboBox = new javax.swing.JComboBox<>();
@@ -269,11 +268,10 @@ public class PatientRegistration extends javax.swing.JFrame {
                     .addComponent(jLabel12))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(contactTextField)
+                    .addComponent(contactTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 185, Short.MAX_VALUE)
                     .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(companyTextField)
-                        .addComponent(fullnameTextField)
-                        .addComponent(birthDateChooser, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(companyTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 185, Short.MAX_VALUE)
+                        .addComponent(fullnameTextField)))
                 .addGap(29, 29, 29)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
@@ -313,9 +311,7 @@ public class PatientRegistration extends javax.swing.JFrame {
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel7)
                             .addComponent(fullnameTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(birthDateChooser, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(53, 53, 53)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel12)
                             .addComponent(contactTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -441,14 +437,15 @@ public class PatientRegistration extends javax.swing.JFrame {
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel16)
-                    .addComponent(mobileTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel17)
-                    .addComponent(otherTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel18)
-                        .addComponent(emailTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(emailTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel16)
+                        .addComponent(mobileTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel17)
+                        .addComponent(otherTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -462,21 +459,16 @@ public class PatientRegistration extends javax.swing.JFrame {
 
         jCheckBox4.setText("Died");
 
-        printButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ebaad Uddin\\Documents\\NetBeansProjects\\Assignment_03_F2019027067\\src\\assignment_03_f2019027067\\icons\\apps_printer_15747.png")); // NOI18N
         printButton.setText("Print Card");
 
-        uploadPictureButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ebaad Uddin\\Documents\\NetBeansProjects\\Assignment_03_F2019027067\\src\\assignment_03_f2019027067\\icons\\photo-photography-image-picture_108525.png")); // NOI18N
         uploadPictureButton.setText("Picture");
         uploadPictureButton.setEnabled(false);
 
-        NewFormButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ebaad Uddin\\Documents\\NetBeansProjects\\Assignment_03_F2019027067\\src\\assignment_03_f2019027067\\icons\\Add_40971.png")); // NOI18N
         NewFormButton.setText("New");
 
-        editButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ebaad Uddin\\Documents\\NetBeansProjects\\Assignment_03_F2019027067\\src\\assignment_03_f2019027067\\icons\\documentediting_editdocuments_text_documentedi_2820.png")); // NOI18N
         editButton.setText("Edit");
         editButton.setEnabled(false);
 
-        reportButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ebaad Uddin\\Documents\\NetBeansProjects\\Assignment_03_F2019027067\\src\\assignment_03_f2019027067\\icons\\trade_report_reports_documents_2351.png")); // NOI18N
         reportButton.setText("Reports");
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
@@ -532,7 +524,6 @@ public class PatientRegistration extends javax.swing.JFrame {
 
         jPanel6.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(204, 204, 204), new java.awt.Color(204, 204, 204), new java.awt.Color(204, 204, 204), new java.awt.Color(204, 204, 204)));
 
-        orderButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ebaad Uddin\\Downloads\\icons\\1486395300-03-trolley_80567.png")); // NOI18N
         orderButton.setText("Order");
 
         Button.setText("Pick Names");
@@ -662,7 +653,6 @@ typeTextField.setText("CTRL+L or F9 to LOV");        // TODO add your handling c
     private javax.swing.JTextField addressTextField;
     private javax.swing.JComboBox<String> ageComboBox;
     private javax.swing.JTextField ageTextField;
-    private com.toedter.calendar.JDateChooser birthDateChooser;
     private javax.swing.JComboBox<String> citiesComboBox;
     private javax.swing.JTextField cnicTextField;
     private javax.swing.JTextField companyTextField;

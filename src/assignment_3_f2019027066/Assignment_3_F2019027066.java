@@ -1,8 +1,8 @@
 
-package assignment_03_f2019027067;
+package assignment_3_f2019027066;
 
 
-public class Assignment_03_F2019027067 {
+public class Assignment_3_F2019027066 {
 
     public static void main(String[] args) 
     {
